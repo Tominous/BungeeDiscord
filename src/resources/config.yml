@@ -11,4 +11,4 @@ join-leave-chat-id: '123456789'
 
 
 # Enable debug logging? Only useful if you are developing this plugin.
-debug-enabled: false
+debug-enabled: true
