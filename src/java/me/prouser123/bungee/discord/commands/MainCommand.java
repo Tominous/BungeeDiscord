@@ -13,7 +13,7 @@ import me.prouser123.bungee.discord.base.GenerateOnDemand;
 
 public class MainCommand implements MessageCreateListener, BaseCommand, GenerateOnDemand {
 	
-	//public static EmbedBuilder CommandEmbed = null;
+	public static EmbedBuilder CommandEmbed = null;
 	public static ArrayList<String> array;
 	public static ArrayList<String> subArray;
 	
@@ -66,11 +66,11 @@ public class MainCommand implements MessageCreateListener, BaseCommand, Generate
     		// Currently not required as there are no main commands that require it.
     		// Instead we will just add the field.
     		
-    		//if (this.isGoD(split[1])) {
-    		//	this.runGoD(split, embed, event);
-    		//} else {
-        	//	embed.addField(split[0], split[1]);
-    		//}
+    		if (this.isGoD(split[1])) {
+    			this.runGoD(split, embed, event);
+    		} else {
+        		embed.addField(split[0], split[1]);
+    		}
 
         	embed.addField(split[0], split[1]);
     	}
